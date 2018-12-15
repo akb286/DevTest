@@ -2,28 +2,18 @@
 <html>
 
 <head>
-  <title></title>
+  <title>Online Users</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<script type="text/javascript" src="file.json"></script>
-<script type="text/javascript" src="script.js"></script>
+
 
 <body>
   <button id="button" onclick="myFunction()">Online Users</button>
-  <div class="center" id="myDIV">
-    Users will go here!
-  </div>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myDIV");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  </script>
+  <h1>Users will go here!</h1>
+  <ul id="users">
 
+  </ul>
 </body>
+<script src="script.js"></script>
 
 </html>
