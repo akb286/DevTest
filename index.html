@@ -5,6 +5,8 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<script type="text/javascript" src="file.json"></script>
+<script type="text/javascript" src="script.js"></script>
 
 <body>
   <button id="button" onclick="myFunction()">Online Users</button>
@@ -20,20 +22,8 @@
         x.style.display = "none";
       }
     }
-
-    // fetch users
-    function setup() {
-      loadJSON("https://jsonplaceholder.typicode.com/users", gotData, 'jsonp');
-    }
-
-    function gotData(data) {
-      printLn(data);
-    }
-
-    function draw() {
-
-    }
   </script>
+
 </body>
 
 </html>
