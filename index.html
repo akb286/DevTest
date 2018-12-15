@@ -20,6 +20,19 @@
         x.style.display = "none";
       }
     }
+
+    // fetch users
+    function setup() {
+      loadJSON("https://jsonplaceholder.typicode.com/users", gotData, 'jsonp');
+    }
+
+    function gotData(data) {
+      printLn(data);
+    }
+
+    function draw() {
+
+    }
   </script>
 </body>
 
