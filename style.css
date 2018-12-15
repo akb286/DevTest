@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+}
+
+body {
+  background-color: #C5A0BE;
+}
+
+#toggleUsers {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 10px solid #fff;
+  transition: all ease-in-out 200ms;
+  -webkit-transition: all ease-in-out 200ms;
+}
+
+#toggleUsers:hover {
+  opacity: 0.7;
+}
+
+#vcontainer {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+#content {
+  display: inline-block;
+  background-color: #310028;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}

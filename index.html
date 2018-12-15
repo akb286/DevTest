@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="vcontainer">
+    <div id="toggleUsers" onclick="toggleUsers()">
+      <div class="center" id="content">
+        Online Users
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var toggleStatus = 1;
+
+    function toggleUsers() {
+      if (toggleStatus == 1) {
+        document.getElementById("users");
+        toggleStatus = 0;
+      } else if (toggleStatus == 0) {
+        document.getElementById("users");
+        toggleStatus = 1;
+      }
+    }
+  </script>
+</body>
+
+</html>
