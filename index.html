@@ -7,24 +7,17 @@
 </head>
 
 <body>
-  <div id="vcontainer">
-    <div id="toggleUsers" onclick="toggleUsers()">
-      <div class="center" id="content">
-        Online Users
-      </div>
-    </div>
+  <button onclick="myFunction()">Online Users</button>
+  <div id="myDIV">
+    Users will go here!
   </div>
-
   <script>
-    var toggleStatus = 1;
-
-    function toggleUsers() {
-      if (toggleStatus == 1) {
-        document.getElementById("users");
-        toggleStatus = 0;
-      } else if (toggleStatus == 0) {
-        document.getElementById("users");
-        toggleStatus = 1;
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
       }
     }
   </script>
