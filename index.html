@@ -8,24 +8,26 @@
 
 
 <body>
-  <button id="myButton">Online Users</button>
-  <div id="myDiv">
-    <h1>Users will go here!</h1>
-    <ul id="users"></ul>
+  <div class="flex">
+    <button id="myButton">Online Users</button>
+    <div id="myDiv" style="display:none">
+      <h1>Current Online Users</h1>
+      <ul id="users"></ul>
+    </div>
   </div>
 </body>
 
 <script src="script.js"></script>
 <script type="text/javascript">
-  // Script to hide/show menu
+  // Script to hide/show myDiv
   var button = document.querySelector('#myButton');
-  var menu = document.querySelector('#myDiv');
+  var myDiv = document.querySelector('#myDiv');
   button.addEventListener('click', function(event) {
-    if (menu.style.display == "") {
-      menu.style.display = "none";
+    if (myDiv.style.display == "") {
+      myDiv.style.display = "none";
       button.innerHTML = "Online Users";
     } else {
-      menu.style.display = "";
+      myDiv.style.display = "";
       button.innerHTML = "Close";
     }
   });
