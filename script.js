@@ -32,6 +32,8 @@ fetch(url)
 	console.log(JSON.stringify(error))
 });
 
+
+
 // const getData = () => {
 // 	return fetch('http://jsonplaceholder.typicode.com/users')
 // 	.then(res => res.json())
