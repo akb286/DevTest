@@ -20,7 +20,7 @@ fetch(url)
 			span = createNode('span');
 
 			img.src=user.picture.medium;
-			span.innerHtml=`${user.name.first} ${user.name.last}`;
+			span.textContent=`${user.name.first} ${user.name.last}`;
 
 			append(li,img);
 			append(li,span);
