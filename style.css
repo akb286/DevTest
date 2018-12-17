@@ -1,28 +1,42 @@
 * {
-  margin: 0;
-  padding: 30px;
+  margin: 10px;
   text-decoration: none;
   font-family: Arial;
 }
 
 #myDIV {
-  width: 100%;
   padding: 50px 0;
   text-align: center;
   background-color: #310028;
   margin-top: 20px;
   color: white;
+  display: flex;
+  margin: auto;
 }
 
 #myButton {
-  width: 20%;
-  height: 50px;
   border: 1px solid #310028;
   align-items: center;
   justify-content: center;
   font-size: 25px;
 }
 
-.flex {
+#users {
+  position: absolute;
+}
+
+.flex-container {
   display: flex;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  margin-right: auto
+}
+
+span {
+  align-items: center;
+  display: block;
 }
